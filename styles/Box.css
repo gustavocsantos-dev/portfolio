@@ -1,0 +1,109 @@
+.box {
+  text-align: center;
+  background-color: #212121;
+  width: 100%;
+  max-width: 9rem;
+  aspect-ratio: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-top-left-radius: 2.5rem;
+  cursor: pointer;
+
+  border-bottom: 5px solid;
+  border-image: linear-gradient(
+    90deg,
+    #63caf7,
+    #0581bb,
+    #111253
+  ) 1;
+
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.img{
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.box:hover {
+  transform: translateY(-6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body.dark .box {
+  background-color: #212121;;
+  color: #f8fafc;
+}
+
+body.light .box {
+  background-color:#020617;
+  color: #f8fafc;
+}
+
+@media (max-width:740px){
+  .img{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width:640px){
+  .img{
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .box{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:640px){
+  .img{
+    margin-top: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+
+@media (max-width: 200px){
+  .box{
+    width: 7rem;
+    font-size: 1rem;
+  }
+
+  .img{
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 180px){
+  .box{
+    width: 6rem;
+    font-size: 0.9rem;
+  }
+
+  .img{
+    width: 2rem;
+    height: 2rem;
+  }
+}

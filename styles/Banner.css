@@ -1,0 +1,354 @@
+.banner {
+  min-height: calc(100vh + 15px); 
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10rem;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  max-width: 480px;
+}
+
+.title h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.title span {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.role {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.description {
+  margin-top: 1rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.actions a {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+
+.actions a:first-child {
+  background-color: #38bdf8;
+  color: #020617;
+}
+
+.actions a:first-child:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.actions a:last-child {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.actions a:last-child:hover {
+  background-color: rgba(56, 189, 248, 0.1);
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile:hover{
+  transform: translateY(-6px);
+}
+
+.profile img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+}
+
+body.dark .banner {
+  background-color: #020617;
+}
+
+body.light .banner {
+  background-color: #f8fafc;
+}
+
+
+@media (max-width:1260px){
+  .banner{
+    gap: 0rem;
+  }
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .title{
+    max-width: 350px;
+  }
+
+  .profile .profile img{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .banner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .description {
+    width: 350px;
+    text-align: center;
+  }
+
+  .intro {
+    text-align: center;
+  }
+
+  .title {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .title h1,
+  .title span {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .profile img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width:550px){
+
+  .title{
+    margin-top: 2rem;
+    height: 20rem;
+    font-size: 1rem;
+  }
+
+  .title h1{
+    font-size: 2rem;
+  }
+
+  .title span{
+    font-size: 2rem;
+  }
+
+}
+
+@media (max-width:480px){
+  .banner{
+    padding: 0;
+  }
+
+
+  .intro{
+    max-width: 440px;
+  }
+
+  .profile{
+    max-width: 440px;
+    margin-bottom: 7rem;
+  }
+
+  .title{
+    height: 32rem;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .role{
+    margin-bottom: -0.5rem;
+  }
+
+
+  .actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .actions a{
+    width: 200px;
+  }
+}
+
+@media (max-width:440px){
+  .title{
+    max-width: 300px;
+  }
+
+  .description{
+    width: 300px;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width:370px){
+  .intro{
+    height: 32rem;
+  }
+  
+  .title{
+    max-width: 200px;
+  }
+
+  .title h1{
+    font-size: 1.5rem;
+  }
+
+  .title span{
+    font-size: 1.5rem;
+  }
+
+  .role{
+    font-size: 1rem;
+  }
+
+  .description{
+    max-width: 200px;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  .actions a{
+    width: 8rem;
+    font-size: 0.8rem;
+  }
+
+  .profile{
+    max-width: 200px;
+    margin-left: 3.5rem;
+    height: 20rem;
+  }
+
+  .profile img{
+    max-width: 200px;
+  }
+
+}
+
+@media (max-width:300px){
+  .profile{
+    max-width: 200px;
+    margin: 0 2.8rem;
+    height: 20rem;
+  }
+
+  .profile img{
+    max-width: 200px;
+  }
+}
+
+@media (max-width:280px){
+  .profile{
+    max-width: 8rem;
+    height: 15rem;
+    margin-left: 3.7rem;
+  }
+
+  .profile img{
+    max-width: 8rem;
+    height: 8rem;
+    height: 8rem;
+  }
+}
+
+@media (max-width:240px){
+  .intro{
+    height: 32rem;
+    max-width: 100px;
+    margin-left: 0.5rem;
+  }
+  
+  .title{
+    max-width: 100px;
+    margin-left: 6.5rem;
+  }
+
+  .title h1{
+    font-size: 1.2rem;
+  }
+
+  .title span{
+    font-size: 1.2rem;
+  }
+
+  .role{
+    font-size: 1rem;
+  }
+
+  .description{
+    max-width: 100px;
+    font-size: 0.7rem;
+    margin-top: 2rem;
+  }
+
+  .actions a{
+    width: 3rem;
+    font-size: 0.6rem;
+  }
+  .profile{
+    visibility: hidden;
+    max-width: 4rem;
+    height: 4rem;
+    margin-top: 5rem;
+    margin-left: 4.4rem;
+  }
+
+  .profile img{
+    max-width: 4rem;
+    height: 4rem;
+  }
+}
