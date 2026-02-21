@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "../styles/ProjectIem.css"
+import "../styles/ProjectItem.css"
 
 export default function ProjectIem(props){
 
