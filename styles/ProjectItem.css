@@ -185,13 +185,16 @@ body.light .projectDiv{
 }
 }
 
-.btn{
-  font-size: 0.8rem;
-}
 
 @media (max-width: 400px){
   .projectDiv {
   margin-left: -6rem;
+}
+.projectText p{
+    text-align: center;
+}
+.projectButtons{
+  font-size: 1rem;
 }
 }
 
@@ -211,7 +214,7 @@ body.light .projectDiv{
   }
 
 .btn{
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   width: 7rem;
 }
 
