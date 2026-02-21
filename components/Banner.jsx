@@ -11,14 +11,14 @@ export default function Banner(){
                         Formado em Análise e Desenvolvimento de Sistemas, com foco em React e JavaScript. Busco minha primeira oportunidade na área de TI.
                     </p>
                     <div className="actions">
-                        <a href="./assets/cv/cv-gustavocarvalho.pdf" target="_blank" rel="noopener" download={"cv-gustavocarvalho.pdf"}>Download CV</a>
+                        <a href="./Assets/cv/cv-gustavocarvalho.pdf" target="_blank" rel="noopener" download={"cv-gustavocarvalho.pdf"}>Download CV</a>
                         <a href="#contacts">Entrar em contato</a>
                     </div>
                 </div>
             </div>
             <div className="profile">
                 <a href="">
-                    <img src="./assets/foto-do-perfil.png" alt="profilePic" />
+                    <img src="./Assets/foto-do-perfil.PNG" alt="profilePic" />
                 </a>
             </div>
         </div>
