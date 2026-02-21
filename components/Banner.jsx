@@ -1,4 +1,6 @@
 import "../styles/Banner.css"
+import fotoPerfil from "/foto-do-perfil.png"
+
 
 export default function Banner(){
     return(
@@ -11,14 +13,14 @@ export default function Banner(){
                         Formado em Análise e Desenvolvimento de Sistemas, com foco em React e JavaScript. Busco minha primeira oportunidade na área de TI.
                     </p>
                     <div className="actions">
-                        <a href="./Assets/cv/cv-gustavocarvalho.pdf" target="_blank" rel="noopener" download={"cv-gustavocarvalho.pdf"}>Download CV</a>
+                        <a href="/cv/cv-gustavocarvalho.pdf" target="_blank" rel="noopener" download={"cv-gustavocarvalho.pdf"}>Download CV</a>
                         <a href="#contacts">Entrar em contato</a>
                     </div>
                 </div>
             </div>
             <div className="profile">
                 <a href="">
-                    <img src="./Assets/foto-do-perfil.PNG" alt="profilePic" />
+                    <img src={fotoPerfil} alt="profilePic" />
                 </a>
             </div>
         </div>
