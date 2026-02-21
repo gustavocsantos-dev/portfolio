@@ -18,7 +18,7 @@ export default function Banner(){
             </div>
             <div className="profile">
                 <a href="">
-                    <img src="\assets\foto-do-perfil.png" alt="profilePic" />
+                    <img src="./assets/foto-do-perfil.png" alt="profilePic" />
                 </a>
             </div>
         </div>
