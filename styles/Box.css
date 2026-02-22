@@ -57,12 +57,13 @@ body.light .box {
   color: #f8fafc;
 }
 
-@media (max-width:740px){
+@media (max-width:835px){
   .img{
     width: 2.5rem;
     height: 2.5rem;
   }
 }
+
 
 @media (max-width:640px){
   .img{

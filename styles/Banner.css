@@ -1,6 +1,5 @@
 .banner {
-  min-height: calc(100vh + 15px); 
-  width: 100%;
+  min-height: calc(85vh + 15px); 
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -105,15 +104,23 @@ body.light .banner {
   background-color: #f8fafc;
 }
 
+@media (max-width:1500px){
+  .banner{
+    gap: 0rem;
+  }
+}
+
+@media (max-width:1400px){
+  .intro{
+    margin-left: 3rem;
+  }
+}
 
 @media (max-width:1260px){
   .banner{
     gap: 0rem;
   }
 }
-
-
-
 
 @media (max-width: 1024px) {
   .title{
@@ -126,15 +133,29 @@ body.light .banner {
   }
 }
 
+@media (max-width: 954px){
+  .banner {
+    grid-template-columns: 1fr;
+    gap: 6rem;
+    min-height: calc(100vh + 15px); 
+    margin-left: -3rem;
+  }
 
+  .intro{
+    margin-top: 6rem;
+    text-align: center;
+  }
 
+  .profile{
+    margin-left: 3rem;
+  }
+}
 
 @media (max-width: 768px) {
   .banner {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    padding: 2rem 1.5rem;
-    text-align: center;
+    gap: 5rem;
+    min-height: calc(80vh + 15px);
+    margin-top: -2rem;
   }
 
   .description {
@@ -144,6 +165,7 @@ body.light .banner {
 
   .intro {
     text-align: center;
+    margin-top: 4.5rem;
   }
 
   .title {
@@ -163,19 +185,27 @@ body.light .banner {
   }
 
   .profile img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
 }
 
 @media (max-width:550px){
 
+  .banner{
+    margin-left: 0rem;
+  }
+
   .title{
     margin-top: 2rem;
     height: 20rem;
     font-size: 1rem;
+    margin-left: -2rem;
   }
 
+  .profile{
+    margin-left: 0rem;
+  }
   .title h1{
     font-size: 2rem;
   }
@@ -188,17 +218,20 @@ body.light .banner {
 
 @media (max-width:480px){
   .banner{
-    padding: 0;
+    gap: 0;
+    margin-top: -6rem;
+    min-height: calc(100vh + 15px); 
   }
 
-
-  .intro{
-    max-width: 440px;
+  .description{
+    width: 300px;
   }
 
   .profile{
-    max-width: 440px;
+    width:225px;
+    height:225px;
     margin-bottom: 7rem;
+    margin: 0 auto;
   }
 
   .title{
@@ -229,15 +262,22 @@ body.light .banner {
     max-width: 300px;
   }
 
+
+
   .description{
     width: 300px;
     margin-top: 2rem;
   }
 }
 
-@media (max-width:370px){
+@media (max-width:400px){
   .intro{
     height: 32rem;
+    margin-top: 4rem;
+  }
+
+  .banner{
+    margin-left: -0.5rem;
   }
   
   .title{
@@ -268,34 +308,47 @@ body.light .banner {
   }
 
   .profile{
-    max-width: 150px;
-    margin-left: 4rem;
+    width: 200px;
+    margin: 0 auto;
     height: 20rem;
   }
 
   .profile img{
-    max-width: 200px;
+    width: 190px;
+    height: 190px;
   }
+
 
 }
 
 @media (max-width:340px){
-  .profile{
-    max-width: 120px;
-    margin-left: 4rem;
-    height: 20rem;
+  .intro{
+    margin-top: 4rem;
   }
-}
-@media (max-width:300px){
+  
   .profile{
     max-width: 200px;
-    margin: 0 2.8rem;
+    margin: 0 auto;
+    margin-right: 2.5rem;
+    height: 20rem;
+  }
+
+    .profile img{
+    width: 175px;
+    height: 175px;
+  }
+}
+
+@media (max-width:320px){
+  .profile{
+    max-width: 200px;
+
     height: 20rem;
   }
 
   .profile{
     max-width: 120px;
-    margin-left: 3rem;
+    margin-left: 5rem;
     height: 20rem;
   }
 }

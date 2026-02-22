@@ -28,12 +28,18 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 1160px){
+@media (max-width: 1392px){
   .contacts{
-    max-width: 700px;
+      max-width: 700px;
   }
 }
 
+
+@media (max-width: 913px){
+    .contacts{
+      max-width: 500px;
+  }
+}
 
 @media (max-width: 768px) {
   .contacts {
@@ -63,6 +69,12 @@
   .contactTitle h1{
       font-size: 1.8rem;
   }
+}
+
+@media (max-width: 390px){
+  .contactTitle {
+  margin-bottom: 1rem;
+}
 }
 
 

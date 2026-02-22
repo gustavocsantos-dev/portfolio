@@ -40,9 +40,22 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 858px){
+  .skills{
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .skillBoxes{
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 670px) {
   .skillBoxes {
     grid-template-columns: repeat(2, 1fr);
+
   }
 }
 
@@ -53,13 +66,20 @@
   }
 }
 
-@media (max-width: 350px){
+@media (max-width: 420px){
 .skillBoxes {
 
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 4rem;
 }
 }
+
+@media (max-width: 400px){
+  .skillTitle h1{
+      font-size: 1.7rem;
+  }
+}
+
 
 @media (max-width: 200px){
     .skillTitle h1{

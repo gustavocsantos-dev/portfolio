@@ -28,6 +28,16 @@
   justify-items: center;
 }
 
+@media(max-width:1152px){
+  .projects{
+      max-width: 500px;
+  }
+  
+  .projectsItems {
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+}
+}
+
 @media (max-width: 960px){
 .projectsItems {
   grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
@@ -37,6 +47,11 @@
 }
 }
 
+@media(max-width:793px){
+  .projects{
+    max-width: 500px;
+  }
+}
 
 @media (max-width: 768px) {
   .projectsTitle {
@@ -72,6 +87,12 @@
     .projectsTitle h1{
     margin-left: 0rem;
   }
+}
+
+@media (max-width: 480px){
+.projectsTitle h1{
+    font-size: 2rem;
+}
 }
 
 @media (max-width: 400px){

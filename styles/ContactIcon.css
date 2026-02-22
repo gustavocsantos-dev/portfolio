@@ -48,22 +48,12 @@ body.light .contactImg {
   background-color:#020617;
 }
 
-@media(max-width:390px){
-.contactImg{
-    width: 3.5rem;
-    height: 3.5rem;
-}
-.contactIcon h3{
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.contactIcon span{
-    font-size: 0.8rem;
-}
-}
 
 @media(max-width:390px){
+.contactIcon{
+    margin-bottom: -4rem;
+}
+
 .contactImg{
     width: 3rem;
     height: 3rem;
@@ -71,9 +61,5 @@ body.light .contactImg {
 .contactIcon h3{
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
-}
-
-.contactIcon span{
-    font-size: 0.7rem;
 }
 }
