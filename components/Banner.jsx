@@ -13,7 +13,7 @@ export default function Banner(){
                         Formado em Análise e Desenvolvimento de Sistemas, com foco em React e JavaScript. Busco minha primeira oportunidade na área de TI.
                     </p>
                     <div className="actions">
-                        <a href="/cv/cv-gustavocarvalho.pdf" target="_blank" rel="noopener" download={"cv-gustavocarvalho.pdf"}>Download CV</a>
+                        <a href="/cv/cv-gustavo-carvalho.pdf" target="_blank" rel="noopener" download={"cv-gustavocarvalho.pdf"}>Download CV</a>
                         <a href="#contacts">Entrar em contato</a>
                     </div>
                 </div>
