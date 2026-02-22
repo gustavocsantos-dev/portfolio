@@ -223,6 +223,9 @@ body.light .banner {
     min-height: calc(100vh + 15px); 
   }
 
+  .intro{
+    margin-right:1rem;
+  }
   .description{
     width: 300px;
   }
@@ -261,8 +264,6 @@ body.light .banner {
   .title{
     max-width: 300px;
   }
-
-
 
   .description{
     width: 300px;
@@ -311,6 +312,7 @@ body.light .banner {
     width: 200px;
     margin: 0 auto;
     height: 20rem;
+    margin-top: -2rem;
   }
 
   .profile img{
@@ -340,6 +342,10 @@ body.light .banner {
 }
 
 @media (max-width:320px){
+  .intro{
+    margin-right: 0.5rem;
+  }
+  
   .profile{
     max-width: 200px;
 
