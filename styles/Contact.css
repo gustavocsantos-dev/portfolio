@@ -71,9 +71,13 @@
   }
 }
 
-@media (max-width: 390px){
+@media (max-width: 400px){
   .contactTitle {
   margin-bottom: 1rem;
+}
+
+.contactTitle h1 {
+  font-size: 1.7rem;
 }
 }
 
