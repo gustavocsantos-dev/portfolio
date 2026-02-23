@@ -274,13 +274,9 @@ body.light .banner {
 @media (max-width:400px){
   .intro{
     height: 32rem;
-    margin-top: 4rem;
+    max-width: 350px;
   }
 
-  .banner{
-    margin-left: -0.5rem;
-  }
-  
   .title{
     max-width: 200px;
   }
@@ -325,13 +321,15 @@ body.light .banner {
 
 @media (max-width:340px){
   .intro{
-    margin-top: 4rem;
+    margin-top: 3rem;
+    margin-bottom: -6rem;
   }
   
+
+
   .profile{
     max-width: 200px;
     margin: 0 auto;
-    margin-right: 2.5rem;
     height: 20rem;
   }
 
@@ -343,19 +341,12 @@ body.light .banner {
 
 @media (max-width:320px){
   .intro{
-    margin-right: 0.5rem;
-  }
-  
-  .profile{
-    max-width: 200px;
-
-    height: 20rem;
+    margin-top: -0.5rem;
   }
 
+
   .profile{
-    max-width: 120px;
-    margin-left: 5rem;
-    height: 20rem;
+    height: 10rem;
   }
 }
 
