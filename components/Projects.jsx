@@ -3,8 +3,12 @@ import ProjectIem from "../components/ProjectItem"
 import { useRevealOnScroll } from "../hooks/useRevealOnScroll"
 import wizardzPreview from "/preview-wizardz.png"
 import simulabPreview from "/preview-simulab.png"
+import kanbanPreview from "/kanban-preview.png"
 import htmlImg from "/html.png"
 import cssImg from "/css.png"
+import reactImg from "/react.png"
+import typescript from "/typescript.png"
+import nodeImg from "/node.png"
 import javascriptImg from "/javascript.png"
 
 export default function Projects(){
@@ -33,6 +37,15 @@ export default function Projects(){
                     tech3={javascriptImg}
                     project="https://simulab-black.vercel.app/"
                     repo="https://github.com/gustavocsantos-dev/simulab"
+                />
+                <ProjectIem 
+                    src={kanbanPreview} 
+                    title="Kanban React" 
+                    description="O Kanban React é uma aplicação web desenvolvida para simular um sistema de gerenciamento de tarefas no modelo Kanban, permitindo organizar atividades em três colunas principais: To Do, Doing, Done. O projeto foi construído com foco em componentização, organização de estado global e boas práticas com React + TypeScript, simulando um fluxo real de gerenciamento de tarefas." 
+                    tech1={reactImg} 
+                    tech2={typescript} 
+                    project="https://kanban-react-hazel.vercel.app/"
+                    repo="https://github.com/gustavocsantos-dev/kanban-react"
                 />
             </div>
         </div>

@@ -4,6 +4,7 @@ import "../styles/ProjectItem.css"
 export default function ProjectIem(props){
 
     const [isOpen, setIsOpen] = useState(false)
+    
 
     return(
         <>
@@ -24,9 +25,9 @@ export default function ProjectIem(props){
                 </section>
 
                 <section className="projectTechs">
-                    <img src={props.tech1} alt="tech-icon" className="tech"/>
-                    <img src={props.tech2} alt="tech-icon" className="tech"/>
-                    <img src={props.tech3} alt="tech-icon" className="tech"/>
+                    {props.tech1 && <img src={props.tech1} alt="tech-icon" className="tech"/>}
+                    {props.tech2 && <img src={props.tech2} alt="tech-icon" className="tech"/>}
+                    {props.tech3 && <img src={props.tech3} alt="tech-icon" className="tech"/>}
                 </section>
 
                 <section className="projectButtons">
